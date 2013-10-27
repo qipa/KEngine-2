@@ -28,7 +28,7 @@ namespace KEngineTest
 
         public override void Update(GameTime gameTime)
         {
-            if (Input.IsKeyPressed(Keys.Escape))
+            if (KInput.IsKeyPressed(Keys.Escape))
                 Engine.Exit();
 
             base.Update(gameTime);

@@ -114,7 +114,7 @@ namespace Kupiakos.KEngine
         /// <param name="gameTime">Game time.</param>
         public override void Update(GameTime gameTime)
         {
-            Input.Update();
+            KInput.Update();
             foreach (GameComponent g in Items)
                 g.Update(gameTime);
 

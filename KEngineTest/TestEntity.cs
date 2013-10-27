@@ -25,16 +25,16 @@ namespace KEngineTest
         {
             //KeyboardState k = Keyboard.GetState();
 
-            if (Input.IsKeyDown(Keys.S))
+            if (KInput.IsKeyDown(Keys.S))
             {
                 Speed = 6f;
                 YAcceleration = 0f;
             }
-            if (Input.IsKeyDown(Keys.Left))
+            if (KInput.IsKeyDown(Keys.Left))
                 Direction += .1f;
-            if (Input.IsKeyDown(Keys.Right))
+            if (KInput.IsKeyDown(Keys.Right))
                 Direction -= .1f;
-            if (Input.IsKeyDown(Keys.Down))
+            if (KInput.IsKeyDown(Keys.Down))
                 YAcceleration = .2f;
 
             if (!Scene.Dimensions.Contains(NextBoundingBox))

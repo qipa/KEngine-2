@@ -18,7 +18,7 @@ namespace Kupiakos.KEngine
         {
             this.Game = game;
             Sprites = new SpriteManager(Game);
-            Input.Initialize();
+            KInput.Initialize();
         }
 
         public void SwitchScene<T>() where T : Scene

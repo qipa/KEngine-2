@@ -53,9 +53,9 @@
     <Compile Include="SpriteManager.cs" />
     <Compile Include="SceneTransition.cs" />
     <Compile Include="Engine.cs" />
-    <Compile Include="Input.cs" />
     <Compile Include="QuadTree.cs" />
     <Compile Include="ISolid.cs" />
+    <Compile Include="KInput.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

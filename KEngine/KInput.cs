@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Kupiakos.KEngine
 {
-    public static class Input
+    public static class KInput
     {
 
         /// <summary>

@@ -1,28 +1,29 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="KEngine/QuadTree.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KEngine\QuadTree.cs">
     <Files>
-      <File FileName="KEngine/Scene.cs" Line="1" Column="1" />
-      <File FileName="KEngineTest/TestEntity.cs" Line="1" Column="1" />
-      <File FileName="KEngine/ISolid.cs" Line="1" Column="1" />
-      <File FileName="KEngine/SpriteManager.cs" Line="1" Column="1" />
-      <File FileName="KEngine/Entity.cs" Line="1" Column="1" />
-      <File FileName="KEngineTest/TestScene.cs" Line="1" Column="1" />
-      <File FileName="KEngineTest/Game1.cs" Line="1" Column="1" />
-      <File FileName="KEngineTest/Program.cs" Line="1" Column="1" />
-      <File FileName="KEngine/QuadTree.cs" Line="12" Column="30" />
+      <File FileName="KEngine\Scene.cs" Line="1" Column="1" />
+      <File FileName="KEngineTest\TestEntity.cs" Line="1" Column="1" />
+      <File FileName="KEngine\ISolid.cs" Line="1" Column="1" />
+      <File FileName="KEngine\SpriteManager.cs" Line="1" Column="1" />
+      <File FileName="KEngine\Entity.cs" Line="1" Column="1" />
+      <File FileName="KEngineTest\TestScene.cs" Line="1" Column="1" />
+      <File FileName="KEngineTest\Game1.cs" Line="1" Column="1" />
+      <File FileName="KEngineTest\Program.cs" Line="1" Column="1" />
+      <File FileName="KEngine\QuadTree.cs" Line="174" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="KEngine" expanded="True" selected="True" />
-          <Node name="KEngineTest" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
+        <State expanded="True" selected="True">
+          <Node name="KEngine" expanded="True" />
+          <Node name="KEngineTest" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
