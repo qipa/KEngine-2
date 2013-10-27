@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4270136-EAB9-457B-AC03-1305534E59F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Kupiakos.KEngine</RootNamespace>
+    <AssemblyName>KEngine</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\..\..\Random\monodevelop\monogame\SDL2\MonoGame\MonoGame.Framework\bin\SDL2\Debug\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\..\Random\monodevelop\monogame\SDL2\MonoGame\MonoGame.Framework\bin\SDL2\Debug\MonoGame.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SDL2#">
+      <HintPath>..\..\..\..\..\Random\monodevelop\monogame\SDL2\MonoGame\MonoGame.Framework\bin\SDL2\Debug\SDL2#.dll</HintPath>
+    </Reference>
+    <Reference Include="TheoraPlay#">
+      <HintPath>..\..\..\..\..\Random\monodevelop\monogame\SDL2\MonoGame\MonoGame.Framework\bin\SDL2\Debug\TheoraPlay#.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="SpriteManager.cs" />
+    <Compile Include="SceneTransition.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="QuadTree.cs" />
+    <Compile Include="ISolid.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
