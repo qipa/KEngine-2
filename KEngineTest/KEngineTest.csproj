@@ -64,6 +64,7 @@
     <None Include="Content\ball.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Content\ginger.xnb" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />

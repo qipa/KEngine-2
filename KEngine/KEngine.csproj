@@ -44,6 +44,11 @@
     <Reference Include="TheoraPlay#">
       <HintPath>..\..\..\..\..\Random\monodevelop\monogame\SDL2\MonoGame\MonoGame.Framework\bin\SDL2\Debug\TheoraPlay#.dll</HintPath>
     </Reference>
+    <Reference Include="TiledSharp">
+      <HintPath>..\..\..\..\..\Random\tiledsharp\TiledSharp\TiledSharp\bin\Debug\TiledSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -56,6 +61,23 @@
     <Compile Include="QuadTree.cs" />
     <Compile Include="ISolid.cs" />
     <Compile Include="KInput.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+    <Compile Include="Tiles\TileSet.cs" />
+    <Compile Include="Tiles\TileScene.cs" />
+    <Compile Include="EntityManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Tiles\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy EolMarker="Windows" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentSwitchBody="True" AnonymousMethodBraceStyle="NextLine" PropertyBraceStyle="NextLine" PropertyGetBraceStyle="NextLine" PropertySetBraceStyle="NextLine" EventBraceStyle="NextLine" EventAddBraceStyle="NextLine" EventRemoveBraceStyle="NextLine" StatementBraceStyle="NextLine" ElseNewLinePlacement="NewLine" CatchNewLinePlacement="NewLine" FinallyNewLinePlacement="NewLine" WhileNewLinePlacement="NewLine" ArrayInitializerBraceStyle="NextLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeIndexerDeclarationBracket="False" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>

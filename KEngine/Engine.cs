@@ -1,5 +1,8 @@
 using System;
 using Microsoft.Xna.Framework;
+using System.Reflection;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Kupiakos.KEngine
 {
@@ -10,9 +13,26 @@ namespace Kupiakos.KEngine
     /// </summary>
     public class Engine
     {
+        /// <summary>
+        /// The game that created this Engine.
+        /// </summary>
+        /// <value>The game.</value>
         public Game Game { get; private set; }
+
+        /// <summary>
+        /// The SpriteManager registered here.
+        /// </summary>
+        /// <value>The sprites.</value>
         public SpriteManager Sprites { get; private set; }
+
+        /// <summary>
+        /// The Scene that is currently in view.
+        /// </summary>
+        /// <value>The current scene.</value>
         public Scene CurrentScene { get; private set; }
+
+
+       
 
         public Engine(Game game)
         {
@@ -30,10 +50,13 @@ namespace Kupiakos.KEngine
             this.Game.Components.Add(CurrentScene);
         }
 
+
         public void Exit()
         {
             this.Game.Exit();
         }
+
+
 
     }
 

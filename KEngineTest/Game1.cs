@@ -1,5 +1,6 @@
 #region Using Statements
 using System;
+using System.Linq;
 using Kupiakos.KEngine;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -48,16 +49,21 @@ namespace KEngineTest
             graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
             graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             
-            Console.WriteLine("{0}x{1}", GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
-                              GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
+            //Console.WriteLine("{0}x{1}", GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
+            //   GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
             graphics.ApplyChanges();
             
-            Console.WriteLine("{0}x{1}", graphics.PreferredBackBufferWidth,
-                              graphics.PreferredBackBufferHeight);
+            //Console.WriteLine("{0}x{1}", graphics.PreferredBackBufferWidth,
+            //     graphics.PreferredBackBufferHeight);
 
             graphics.IsFullScreen = true;
 
             engine = new Engine(this);
+
+
+            this.Exit();
+
+
             engine.SwitchScene<TestScene>();
 
             base.Initialize();
@@ -80,12 +86,12 @@ namespace KEngineTest
             graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
             graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             
-            Console.WriteLine("{0}x{1}", GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
-                              GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
+            //Console.WriteLine("{0}x{1}", GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
+            //                GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
             graphics.ApplyChanges();
             
-            Console.WriteLine("{0}x{1}", graphics.PreferredBackBufferWidth,
-                              graphics.PreferredBackBufferHeight);
+            //Console.WriteLine("{0}x{1}", graphics.PreferredBackBufferWidth,
+            //                graphics.PreferredBackBufferHeight);
 
             //this.Window.
             base.BeginRun();

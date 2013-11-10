@@ -102,7 +102,8 @@ namespace Kupiakos.KEngine
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         public IEnumerable<T> FindCollisions<T>(Rectangle rect) where T : Entity
         {
-            return null;
+            // Until the QuadTree implementation is completely finished, this is the best we got.
+            return FindEntity<T>((e => rect.Intersects(e.BoundingBox)));
         }
 
         /// <Docs>To be added.</Docs>
